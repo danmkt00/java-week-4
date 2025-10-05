@@ -201,10 +201,10 @@ while (it.hasNext())
 ✅ **Learning Outcomes**
 By the end of this topic, students will:
 
-* Understand how to **iterate through any Java collection** safely.
-* Know when to use **Iterator** vs **for-each**.
-* Be comfortable using **lambda-based forEach()** (Java 8+).
-* Avoid common pitfalls like modifying collections during for-each loops.
+- Understand how to **iterate through any Java collection** safely.
+- Know when to use **Iterator** vs **for-each**.
+- Be comfortable using **lambda-based forEach()** (Java 8+).
+- Avoid common pitfalls like modifying collections during for-each loops.
 
 ---
 
