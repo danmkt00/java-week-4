@@ -10,8 +10,16 @@ import java.util.*;
  */
 public class Exercise5
 {
-    public void run()
-    {
+    public static void main(String[] args) {
+        List<String> words = new ArrayList<>(List.of("apple", "banana", "apple", "orange", "banana", "apple"));
+        Map<String, Integer> wordAppearance = new HashMap<>();
 
+        for(String word : words)
+        {
+            wordAppearance.put(word, wordAppearance.getOrDefault(word, 0) + 1);
+        }
+
+        System.out.println(words);
+        System.out.println(wordAppearance);
     }
 }

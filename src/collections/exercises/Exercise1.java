@@ -10,5 +10,13 @@ import java.util.*;
  */
 public class Exercise1
 {
+    public static void main(String[] args) {
+        List<String> words = new ArrayList<>(List.of("apple","banana","kiwi","strawberry", "pear"));
+        List<String> longWords = new ArrayList<>(words);
+        longWords.removeIf(word -> word.length() < 5);
 
+        System.out.println("All words: " + words);
+        System.out.println("Long words: " + longWords);
+
+    }
 }

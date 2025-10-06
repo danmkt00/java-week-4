@@ -11,5 +11,21 @@ import java.util.*;
  */
 public class Exercise4
 {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        Set<Integer> randomNumbers = new HashSet<>();
 
+        while(randomNumbers.size() < 15)
+        {
+            randomNumbers.add(rand.nextInt(20) + 1);
+        }
+
+        System.out.println(randomNumbers);
+
+        System.out.println(randomNumbers.contains(10) ? "Set contains 10" : "Set doesn't contain 10");
+
+        randomNumbers.removeIf(number -> number < 5);
+
+        System.out.println(randomNumbers);
+    }
 }
