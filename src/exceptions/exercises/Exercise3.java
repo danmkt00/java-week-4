@@ -13,6 +13,14 @@ public class Exercise3
 {
     public static void main(String[] args)
     {
+        Scanner sc = new Scanner(System.in);
+        try
+        {
+            int input = Integer.parseInt(sc.next());
+        }catch (NumberFormatException e)
+        {
+            System.out.println("Invalid input");
+        }
 
     }
 }

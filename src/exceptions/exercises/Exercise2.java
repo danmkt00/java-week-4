@@ -14,6 +14,18 @@ public class Exercise2
 {
     public static void main(String[] args)
     {
+        Scanner sc = new Scanner(System.in);
+
+        try (sc) {
+            int[] arr = {1, 2, 3, 4, 5};
+            System.out.print("Index to access: ");
+            int index = sc.nextInt();
+            System.out.println(arr[index]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid index");
+        }
+
 
     }
 }
