@@ -14,6 +14,37 @@ import java.util.*;
 
 public class Exercise1
 {
+    public static void main(String[] args) {
+        List<String> animals = new ArrayList<>(List.of("Dog", "Cat", "Horse", "Lion", "Tiger", "Whale"));
+
+        System.out.println("Use a for-each loop to print each animal in uppercase letters");
+        for(String animal : animals)
+        {
+            System.out.println("Animal name: " + animal.toUpperCase());
+        }
+        System.out.println();
+        Iterator<String> it = animals.iterator();
+        while (it.hasNext())
+        {
+            if(it.next().contains("a"))
+            {
+                it.remove();
+            }
+        }
+
+        System.out.println("Removed any animal names that contain the letter 'a'");
+
+        for(String animal : animals)
+        {
+            System.out.println("Animal name: " + animal);
+        }
+
+
+
+
+
+
+    }
 
 }
 

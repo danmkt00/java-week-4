@@ -11,6 +11,20 @@ import java.util.*;
  */
 public class Exercise3
 {
+    public static void main(String[] args) {
+        Set<String> names = new HashSet<>(List.of("Ali", "Sara", "Lina", "Amir", "Sami"));
+        Iterator<String> it = names.iterator();
+
+        System.out.println(names);
+        while(it.hasNext())
+        {
+            if(it.next().toLowerCase().startsWith("a"))
+            {
+                it.remove();
+            }
+        }
+        System.out.println(names);
+    }
 
 }
 
